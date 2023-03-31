@@ -4,7 +4,7 @@ import LandingPage from './components/Landing_page';
 import PostView from './components/Postview';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Upload from "./components/Upload"
-const API_KEY ="http://localhost:8080"
+const API_KEY =process.env.REACT_API || "http://localhost:8080"
 
 const App = ()=>{
   const [userData , setuserData] = useState([])
