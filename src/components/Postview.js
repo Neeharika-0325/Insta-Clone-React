@@ -12,7 +12,7 @@ const PostView = (props) =>{
     return(
        <>
        <div><Header/></div>
-            {/* <h4>Click on instaclone to view posts</h4> */}
+
             {props.data.map((items)=>(
                 <section className="box" key={items._id}>
                     <div className="wrapper">
