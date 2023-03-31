@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./Header"
 import { useNavigate } from "react-router-dom";
 import "../Upload.css"
-const API_KEY = process.env.REACT_API || "http://localhost:8080"
+const API_KEY = "https://backend-instaclone-elwe.onrender.com"
+//|| "http://localhost:8080"
 
 
 const Upload = () => {
