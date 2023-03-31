@@ -2,7 +2,8 @@ import dots from '../img/icons8-more-48.png'
 import heart from '../img/heart.png'
 import Header from "./Header"
 import "../postview.css"
-const API_KEY = process.env.REACT_API || "http://localhost:8080"
+const API_KEY = "https://backend-instaclone-elwe.onrender.com"
+//|| "http://localhost:8080"
 
 
 const PostView = (props) =>{
@@ -11,8 +12,9 @@ const PostView = (props) =>{
     return(
        <>
        <div><Header/></div>
-            {props.data.map((items,idx)=>(
-                <section className="box">
+            <h4>Click on instaclone to view posts</h4>
+            {props.data.map((items)=>(
+                <section className="box" key={items._id}>
                     <div className="wrapper">
                 <div><b>{items.name}</b></div>
                 <div className="location">{items.location}</div>
@@ -32,6 +34,7 @@ const PostView = (props) =>{
                 </section>
     
             ))}
+            
             </>
     )
 
