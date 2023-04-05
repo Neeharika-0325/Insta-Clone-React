@@ -2,7 +2,7 @@ import dots from '../img/icons8-more-48.png'
 import heart from '../img/heart.png'
 import Header from "./Header"
 import "../postview.css"
-const API_KEY = "https://backend-instaclone-elwe.onrender.com"
+const API_KEY =  "https://backend-nodeinsta.onrender.com"
 //|| "http://localhost:8080"
 
 
